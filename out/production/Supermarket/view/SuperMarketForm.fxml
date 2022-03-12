@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="txtId" prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: #ffff;" stylesheets="@../style/styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SuperMarketFormController">
+   <children>
+      <ImageView fitHeight="227.0" fitWidth="350.0" layoutY="123.0" opacity="0.25" pickOnBounds="true">
+         <image>
+            <Image url="@../Assets/3514981.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="155.0" fitWidth="330.0" layoutX="20.0" opacity="0.71" pickOnBounds="true">
+         <image>
+            <Image url="@../Assets/welcome.gif" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="75.0" layoutY="154.0" onAction="#openAdminOnAction" prefHeight="55.0" prefWidth="214.0" stylesheets="@../style/greenButton.css" text="Admin" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="BOTTOM" layoutX="75.0" layoutY="236.0" onAction="#openCashierOnAction" prefHeight="55.0" prefWidth="214.0" stylesheets="@../style/greenButton.css" text="Cashier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </JFXButton>
+      <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="91.0" layoutY="196.0" size="40" />
+      <FontAwesomeIconView fill="WHITE" glyphName="USERS" layoutX="83.0" layoutY="278.0" size="40" />
+      <Separator layoutX="75.0" layoutY="121.0" prefWidth="200.0" />
+      <Label layoutX="260.0" layoutY="322.0" text="Version 1.0.1">
+         <font>
+            <Font name="Abyssinica SIL" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

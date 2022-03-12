@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextSystemReport" prefHeight="541.0" prefWidth="598.0" style="-fx-background-color: #f8f6ee;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SystemReportFormController">
+   <children>
+      <ImageView fitHeight="541.0" fitWidth="598.0" opacity="0.25" pickOnBounds="true">
+         <image>
+            <Image url="@../Assets/3514981.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="20.0" layoutY="484.0" onAction="#backToAdminSelectForm" prefHeight="29.0" prefWidth="78.0" stylesheets="@../style/whiteButton.css" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="181.0" layoutY="31.0" prefHeight="51.0" prefWidth="247.0" text="Super Market">
+         <font>
+            <Font name="Roboto Black" size="35.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.95">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="22.0" onAction="#backToSupermarketForm" prefHeight="34.0" prefWidth="101.0" stylesheets="@../style/whiteButton.css" text="LogOut" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+         </padding>
+      </JFXButton>
+      <Label layoutX="453.0" layoutY="97.0" prefHeight="30.0" prefWidth="57.0" text="Time  : ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="511.0" layoutY="98.0" prefHeight="30.0" prefWidth="71.0" text="00:00:00">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="83.0" layoutY="104.0" prefHeight="20.0" prefWidth="200.0" text="06  . Octomber. 2021">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="98.0" prefHeight="30.0" prefWidth="78.0" text="Date  :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="dailyReportContext" buttonType="RAISED" layoutX="62.0" layoutY="170.0" onAction="#dailyReportOnAction" prefHeight="59.0" prefWidth="484.0" stylesheets="@../style/greenButton.css" text="DAILY  REPORT" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="monthlyReportContext" buttonType="RAISED" layoutX="62.0" layoutY="247.0" onAction="#monthlyReportOnAction" prefHeight="59.0" prefWidth="484.0" stylesheets="@../style/greenButton.css" text="MONTHLY  REPORT" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="annuallyReportContext" buttonType="RAISED" layoutX="62.0" layoutY="324.0" onAction="#annuallyOnAction" prefHeight="59.0" prefWidth="484.0" stylesheets="@../style/greenButton.css" text="ANNUALLY  REPORT" textFill="WHITE">
+         <font>
+            <Font name="Roboto Black" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXDatePicker fx:id="dateFrom" layoutX="60.0" layoutY="407.0" promptText="FROM">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXDatePicker>
+      <JFXDatePicker fx:id="dateTo" layoutX="355.0" layoutY="407.0" promptText="TO">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXDatePicker>
+      <JFXButton fx:id="contextSearch" layoutX="159.0" layoutY="484.0" onAction="#searchOnAction" prefHeight="29.0" prefWidth="281.0" stylesheets="@../style/blueButton.css" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="11.0" layoutY="132.0" prefHeight="3.0" prefWidth="577.0" />
+      <Separator layoutX="14.0" layoutY="463.0" prefHeight="3.0" prefWidth="577.0" />
+   </children>
+</AnchorPane>

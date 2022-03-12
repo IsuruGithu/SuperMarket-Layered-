@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="contextId" prefHeight="350.0" prefWidth="350.0" style="-fx-background-color: #f8f6ee;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierLoginController">
+   <children>
+      <ImageView fitHeight="350.0" fitWidth="350.0" opacity="0.25" pickOnBounds="true">
+         <image>
+            <Image url="@../Assets/3514981.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton defaultButton="true" layoutX="183.0" layoutY="245.0" onAction="#openOrderForm" prefHeight="42.0" prefWidth="103.0" stylesheets="@../style/blueButton.css" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXPasswordField fx:id="passwordContext" labelFloat="true" layoutX="65.0" layoutY="171.0" prefHeight="32.0" prefWidth="221.0" promptText="Password">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </JFXPasswordField>
+      <JFXTextField fx:id="userNameContext" focusColor="BLACK" labelFloat="true" layoutX="65.0" layoutY="106.0" onAction="#goToPassOnAction" prefHeight="32.0" prefWidth="221.0" promptText="UserName" unFocusColor="BLACK">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="65.0" layoutY="245.0" onAction="#backToSuperMarketForm" prefHeight="42.0" prefWidth="90.0" stylesheets="@../style/whiteButton.css" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <Label layoutX="76.0" layoutY="41.0" prefHeight="32.0" prefWidth="184.0" text="CASHIER LOGIN">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
